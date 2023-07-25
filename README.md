@@ -2,6 +2,8 @@
 
 Quickly build a table page with arco design.
 
+[中文文档](https://github.com/Yer11214/easy-arco-table/blob/main/README.zh-CN.md)
+
 ## Quick Start
 
 ```bash
@@ -133,7 +135,7 @@ npm install easy-arco-table
 `columns` and `methods` Rules 👇
 
 ```js
-// 表格方法封装约束
+// columns rule
 export interface ColumnsDataRule {
   width?: string | number;
   title: string; // 表格显示的title
@@ -154,7 +156,7 @@ export interface ColumnsDataRule {
     badge?: Array<{ value: string | boolean, color: string }>, // 状态点
   }; // 插槽内容
 }
-// table-pages的表格方法封装约束
+// methods rule
 export interface MethodsRule {
   title: string; // 表格显示的title
   fixed?: string; // 在arco文档中写到如果设置fixed必须设置宽度。如果scroll x轴的宽度不够，也是不会显示的 具体可看arco的文档
@@ -175,7 +177,7 @@ Look like this 👇
 ![图片](https://i.imgur.com/zK66OUX.png)
 
 
-what is slot ? you can custom slot like this 👇
+What is slot ? you can custom slot like this 👇
 
 ```js
 
@@ -212,14 +214,14 @@ const columnsTable = [
 ## Tips
 
 
-default request api params
+Default request api params
 
 ```js
  params: {
-    pageNumber: 1, // 当前页数
-    pageSize: 10, // 页面大小
-    sort: 'createTime', // 默认排序字段
-    order: 'desc', // 默认排序方式
+    pageNumber: 1, 
+    pageSize: 10,
+    sort: 'createTime',
+    order: 'desc', 
 }
 
 // if you want to custom request api params
@@ -230,10 +232,10 @@ default request api params
 }'></easyArcoTable>
 ```
 
-default response JSON
+Default response JSON
 
 ```js
-// 第一种
+// first
 
 {
     result:{
@@ -241,14 +243,14 @@ default response JSON
     }
 }
 
-//第二种
+// second
 {
     result:[]
 }
 
 ```
 
-custom response JSON
+Custom response JSON
 
 ```js
 {

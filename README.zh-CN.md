@@ -2,6 +2,9 @@
 
 快速构建 arco 设计的 table 页面
 
+[English Doc](https://github.com/Yer11214/easy-arco-table/blob/main/README.md)
+
+
 ## 快速开始
 
 ```bash
@@ -240,7 +243,7 @@ const columnsTable = [
     }
 }
 
-//第二种
+// 第二种
 {
     result:[]
 }
