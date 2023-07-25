@@ -1,0 +1,28 @@
+{
+  "name": "easy-arco-table",
+  "version": "0.0.1",
+  "type": "module",
+  "author": "Yer",
+  "description": "Create an arco design table page",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/easy-arco-table.umd",
+  "module": "./dist/easy-arco-table.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.49.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5",
+    "vite-plugin-style-import": "^2.0.0",
+    "consola": "^3.2.3"
+  }
+}
